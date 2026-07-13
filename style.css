@@ -203,12 +203,41 @@ nav .common-btn {
 .pricing-card-featured .plan-features li i {
   color: rgb(110, 110, 165);
 }
+
 .plan-btn {
   width: 100%;
+  display: block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
 }
-.pricing-card-featured .outline-btn,
-.pricing-card .plan-btn.outline-btn {
-  border-color: rgb(236, 212, 212);
+
+.pricing-card .plan-btn {
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.pricing-parent-root .pricing-card:last-child .plan-btn {
+  border-color: #334155;
+  color: #334155;
+}
+
+.pricing-card-featured .plan-btn {
+  background: #2563eb;
+  border: 1px solid #2563eb;
+  color: #ffffff;
+}
+
+.pricing-card-featured .plan-btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
 }
 
 footer.main-footer {
@@ -252,5 +281,86 @@ footer.main-footer {
   }
   .footer-links {
     justify-content: center;
+  }
+}
+
+.sponsors-section {
+  background-color: #111827;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.sponsors-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sponsors-subtitle {
+  font-size: 15px;
+  color: rgb(161, 161, 196);
+  margin-bottom: 48px;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sponsor-logo-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.sponsor-logo-card:hover {
+  background: rgba(37, 99, 235, 0.1);
+  border-color: #2563eb;
+  transform: translateY(-4px);
+}
+
+.sponsor-icon {
+  font-size: 36px;
+  color: rgb(190, 190, 233);
+  transition: color 0.3s ease;
+}
+
+.sponsor-logo-card:hover .sponsor-icon {
+  color: #ffffff;
+}
+
+.sponsor-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(161, 161, 196);
+}
+
+.sponsor-logo-card:hover .sponsor-name {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-grid {
+    grid-template-columns: 1fr;
   }
 }
