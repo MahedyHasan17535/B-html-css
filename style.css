@@ -126,3 +126,87 @@ nav .common-btn {
   font-size: 14px;
   color: rgb(173, 168, 168);
 }
+.pricing-parent-root {
+  background: rgb(236, 231, 222);
+  padding: 90px 0;
+}
+.pricing-grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.pricing-card {
+  background: white;
+  border: 1px solid white;
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+.pricing-card-featured {
+    background-color: black;
+  color: rgb(196, 192, 192);
+  border: none;
+  box-shadow: 0 20px 40px rgb(23, 23, 49)
+}
+.plan-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: blue;
+  background: rgba(61, 90, 254, 0.15);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.plan-name {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.pricing-card-featured .plan-name {
+  color: whitesmoke;
+}
+.plan-price {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px 0 6px;
+}
+.plan-note {
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+.pricing-card-featured .plan-note {
+  color: rgb(175, 167, 167);
+}
+.plan-features {
+  margin-bottom: 28px;
+}
+.plan-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+.pricing-card-featured .plan-features li {
+  border-bottom: 1px solid rgb(61, 56, 56);
+}
+.plan-features li i {
+  color: blue;
+  font-size: 13px;
+}
+.pricing-card-featured .plan-features li i {
+  color: rgb(110, 110, 165);
+}
+.plan-btn {
+  width: 100%;
+}
+.pricing-card-featured .outline-btn,
+.pricing-card .plan-btn.outline-btn {
+  border-color: rgb(236, 212, 212);
+}
